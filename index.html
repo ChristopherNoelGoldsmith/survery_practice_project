@@ -9,54 +9,67 @@
 </head>
 <body>
     
+    <header>
+        <h1>Please state your information below</h1>
+        <h2>Your opinion matters to us!</h2>
+    </header>
 
     <main class='container'>
 
-        <h1>Please state your information below</h1>
         <form id='text-input-1' action="post">
-            <!--needs label-->
-            <figure class='input box' for='first-name'><input id='first-name' type="text" placeholder="FIRST NAME"></figure>
-            <figure class='input box' for='last-name'><input id='last-name' type="text" placeholder="LAST NAME"></figure>
-            <figure class='input box' for='email'><input id='email' type="text" placeholder="EMAIL ADDRESS"></figure>
+            
+            <figure for='first-name'><input id='first-name' class='input-box'type="text" placeholder="FIRST NAME"></figure>
+            <figure for='last-name'><input id='last-name' class='input-box' type="text" placeholder="LAST NAME"></figure>
+            <figure for='ID'><input id='ID' class='input-box' type="text" placeholder="EMPLOYEE ID"></figure>
 
         </form>
 
         <form id='multiple-choice' action="post">
-<!--needs values, check to make sure syntax is correct for submiting radio and checkbox values.  is currently missing value-->
-            <section class='radio buttons'>
+
+            <section class='radio-buttons'>
                 
-                <h2>lorem</h2>
-                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
-                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
-                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
-                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
+                <h2 class='medium-font'>Would you reccomend this employer to a friend?</h2>
+                
+                <figure class="multiple-choice"><input type="radio" name="rec" id="yes-radio"><p>Yes</p></figure>
+                <figure class="multiple-choice"><input type="radio" name="rec" id="no-radio"><p>No</p></figure>
+                <figure class="multiple-choice"><input type="radio" name="rec" id="maybe-radio"><p>Maybe</p></figure>
             
             </section>
 
+            <section class="dropdown-menu">
+
+                <h2 class='medium-font'>Your Position</h2>
+                
+                <select name="" id="dropdown" class="input-box">
+                    
+                    <option value="">Select an option</option>
+                    <option value="Team Associte">Team Associate</option>
+                    <option value="Team Lead">Team Lead</option>
+                    <option value="Coach">Coach</option>
+                    <option value="Store Manager">Store Manager</option>
+
+                </select>
+
+            </section>
 
             <section class="check-buttons">
 
-                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>
-                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>
-                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>
-                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>                
+                <h2 class='medium-font'>What are you satisfied with? <span class="note">(Check all that apply.)</span></h2>
+                
+                <figure class="multiple-choice"><input type="checkbox" name="" id=""><p>Managment</p></figure>
+                <figure class="multiple-choice"><input type="checkbox" name="" id=""><p>Scheduling</p></figure>
+                <figure class="multiple-choice"><input type="checkbox" name="" id=""><p>Payscale</p></figure>
+                <figure class="multiple-choice"><input type="checkbox" name="" id=""><p>Your Role</p></figure>                
 
-            </section>
-
-            <section class="comments">
-                <!--needs label-->
-                <input type="text" name="" id="">
-
-            </section>
-
-            <section class="submit-reset">
-
-                <figure class="submit-btn"><input type="button" value="Submit"><p></p></figure>
-                <figure class="reset-btn"><input type="button" value="Reset"><p></p></figure>
+                <hr>
 
             </section>
 
         </form>
+        
+            <textarea name="comments" class="input-box comments-box" placeholder="ENTER COMMENTS HERE"></textarea>
+
+            <input id='submit' class="style-btn" type="submit" value="Submit">
 
     </main>
 
