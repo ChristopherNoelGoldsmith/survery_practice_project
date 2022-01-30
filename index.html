@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Satisfaction Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <main class='container'>
+
+        <p>Please state your information below</p>
+        <form id='text-input-1' action="post">
+            <!--needs label-->
+            <figure class='input box' for='first-name'><input id='first-name' type="text" placeholder="FIRST NAME"></figure>
+            <figure class='input box' for='last-name'><input id='last-name' type="text" placeholder="LAST NAME"></figure>
+            <figure class='input box' for='department'><input id='first-name' type="text" placeholder="DEPARTMENT"></figure>
+
+        </form>
+
+        <form id='multiple-choice' action="post">
+<!--needs values, check to make sure syntax is correct for submiting radio and checkbox values.  is currently missing value-->
+            <section class='radio buttons'>
+            
+                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
+                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
+                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
+                <figure class="radio-button"><input type="radio" name="" id=""><p></p></figure>
+            
+            </section>
+
+
+            <section class="check-buttons">
+
+                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>
+                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>
+                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>
+                <figure class="checkbox-button"><input type="checkbox" name="" id=""><p></p></figure>                
+
+            </section>
+
+            <section class="comments">
+                <!--needs label-->
+                <input type="text" name="" id="">
+
+            </section>
+
+            <section class="submit-reset">
+
+                <figure class="submit-btn"><input type="button" value="Submit"><p></p></figure>
+                <figure class="reset-btn"><input type="button" value="Reset"><p></p></figure>
+
+            </section>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
